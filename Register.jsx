@@ -67,8 +67,8 @@ function Register({ onSwitchToLogin }) {
                     {/* Optional: Dropdown for Roles instead of open text */}
                     <select name="role" value={credentials.role} onChange={changeHandler} style={styles.input}>
                         <option value="" disabled>Select a Role</option>
-                        <option value="CASHIER">CASHIER</option>
-                        <option value="PHARMACIST">PHARMACIST</option>
+                        <option value="USER">USER</option>
+                        <option value="ADMIN">ADMIN</option>
                     </select>
 
                     <button type="submit" disabled={isLoading} style={styles.button}>
